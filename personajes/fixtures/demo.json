@@ -1,0 +1,42 @@
+[
+  {
+    "model": "personajes.hermandad",
+    "pk": 1,
+    "fields": {"nombre": "Vigias del Alba", "reino": "Amanecer", "faccion": "alianza", "descripcion": "Exploradores de las tierras antiguas."}
+  },
+  {
+    "model": "personajes.hermandad",
+    "pk": 2,
+    "fields": {"nombre": "Cenizas del Norte", "reino": "Fuego", "faccion": "horda", "descripcion": "Aventureros unidos por la curiosidad."}
+  },
+  {
+    "model": "personajes.personaje",
+    "pk": 1,
+    "fields": {"nombre": "Thalren", "reino": "Amanecer", "faccion": "alianza", "raza": "humano", "clase": "mago", "especializacion": "arcano", "nivel": 72, "historia": "Busca mapas perdidos de Azeroth.", "hermandad": 1, "creado_en": "2026-09-20T12:00:00Z"}
+  },
+  {
+    "model": "personajes.personaje",
+    "pk": 2,
+    "fields": {"nombre": "Brumacero", "reino": "Amanecer", "faccion": "alianza", "raza": "enano", "clase": "guerrero", "especializacion": "proteccion", "nivel": 58, "historia": "Protege a sus companeros en cada expedicion.", "hermandad": 1, "creado_en": "2026-09-21T12:00:00Z"}
+  },
+  {
+    "model": "personajes.personaje",
+    "pk": 3,
+    "fields": {"nombre": "Zarok", "reino": "Fuego", "faccion": "horda", "raza": "orco", "clase": "chaman", "especializacion": "elemental", "nivel": 64, "historia": "Escucha la voz de los elementos.", "hermandad": 2, "creado_en": "2026-09-22T12:00:00Z"}
+  },
+  {
+    "model": "personajes.aventura",
+    "pk": 1,
+    "fields": {"personaje": 1, "titulo": "El mapa de las ruinas", "zona": "Bosque Viejo", "tipo": "exploracion", "fecha": "2026-09-20", "descripcion": "Encuentra una ruta oculta."}
+  },
+  {
+    "model": "personajes.aventura",
+    "pk": 2,
+    "fields": {"personaje": 2, "titulo": "Guardian del sendero", "zona": "Montanas del Alba", "tipo": "mision", "fecha": "2026-09-21", "descripcion": "Defiende a la caravana."}
+  },
+  {
+    "model": "personajes.aventura",
+    "pk": 3,
+    "fields": {"personaje": 3, "titulo": "Ecos elementales", "zona": "Llanuras Rojas", "tipo": "mazmorra", "fecha": "2026-09-22", "descripcion": "Investiga una fuente de energia elemental."}
+  }
+]
